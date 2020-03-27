@@ -1,0 +1,17 @@
+server:
+  # 设置的eureka端口号
+  port: 9500
+
+spring:
+  application:
+    # 服务模块名称
+    name: springcloud-ribbon-client
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+
+logging:
+  level:
+    root: debug
